@@ -68,6 +68,13 @@ button {
   align-items: center;
 }
 
+.nav-item .active span {
+  color: #4dace1 !important;
+}
+.nav-item .active svg path {
+  stroke: #4dace1;
+}
+
 /* The checkbox container */
 .wu-checkbox-container {
   display: block;

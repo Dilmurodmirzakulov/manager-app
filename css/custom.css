@@ -34,6 +34,25 @@ button {
   color: #fff;
 }
 
+.ma-checkbox-content {
+  border-left: 1px solid #ececec;
+  padding-left: 10px;
+}
+
+.ma-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ma-file-image {
+  height: 40px;
+}
+
+.ma-file-image img {
+  width: 100%;
+  height: 100%;
+}
+
 /* The checkbox container */
 .wu-checkbox-container {
   display: block;

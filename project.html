@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/theme-default.css" />
+    <link rel="stylesheet" href="./css/demo.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-primary">
+      <div class="container">
+        <div class="py-2">
+          <h3 class="mb-0 text-white">Project</h3>
+          <p class="mb-0 text-lightest">View all project</p>
+        </div>
+      </div>
+    </header>
+    <main class="pb-5">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-6">
+            <div class="card p-2">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle btn bg-primary btn-icon me-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13 2V9H20"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="mb-0">Total projects</p>
+                  <div class="text-muted">15 projects</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-2">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle btn bg-primary btn-icon me-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 18H21"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 18H3.01"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 12H21"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 12H3.01"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 6H21"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 6H3.01"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="mb-0">Tasks Done</p>
+                  <div class="text-muted wu-ellipsis">25% tasks done</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="nav nav-tabs wu-tab-nav justify-content-around"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="bg-transparent wu-tab-btn border-0 active"
+            id="active-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#active-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="active-tab-pane"
+            aria-selected="true"
+          >
+            Active
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="bg-transparent wu-tab-btn border-0"
+            id="completed-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#completed-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="completed-tab-pane"
+            aria-selected="false"
+          >
+            Completed
+          </button>
+        </li>
+      </ul>
+      <div class="container">
+        <div class="tab-content p-0 pt-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="active-tab-pane"
+            role="tabpanel"
+            aria-labelledby="active-tab"
+            tabindex="0"
+          >
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="completed-tab-pane"
+            role="tabpanel"
+            aria-labelledby="completed-tab"
+            tabindex="0"
+          >
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card p-2 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>Shopping app project</strong>
+                  <div class="d-flex">
+                    <small class="wu-small-ic me-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 10H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 2V6"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 12 feb 2024 </span>
+                    </small>
+                    |
+                    <small class="wu-small-ic ms-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 18H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 18H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 12H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 12H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 6H21"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3 6H3.01"
+                          stroke="#979797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="ms-1"> 15 tasks </span>
+                    </small>
+                  </div>
+                </div>
+                <div
+                  class="avatar-group d-flex align-items-center assigned-avatar"
+                >
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Kara"
+                    data-bs-original-title="Kara"
+                  >
+                    <img
+                      src="	https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/2.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Nyssa"
+                    data-bs-original-title="Nyssa"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/9.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <img
+                      src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/avatars/10.png"
+                      alt="Avatar"
+                      class="rounded-circle pull-up"
+                    />
+                  </div>
+                  <div
+                    class="avatar avatar-xs wu-extra-badge"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    aria-label="Darcey"
+                    data-bs-original-title="Darcey"
+                  >
+                    <small> +2 </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="mobile-nav d-lg-none">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M3.5 9L12.5 2L21.5 9V20C21.5 20.5304 21.2893 21.0391 20.9142 21.4142C20.5391 21.7893 20.0304 22 19.5 22H5.5C4.96957 22 4.46086 21.7893 4.08579 21.4142C3.71071 21.0391 3.5 20.5304 3.5 20V9Z"
+                stroke="#0096FF"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M9.5 22V12H15.5V22"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <button class="btn nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M8.5 18H21.5"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M3.5 18H3.51"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M8.5 12H21.5"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M3.5 12H3.51"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M8.5 6H21.5"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M3.5 6H3.51"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/favourite">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M21.34 4.60987C20.8292 4.09888 20.2228 3.69352 19.5554 3.41696C18.8879 3.14039 18.1725 2.99805 17.45 2.99805C16.7275 2.99805 16.0121 3.14039 15.3446 3.41696C14.6772 3.69352 14.0708 4.09888 13.56 4.60987L12.5 5.66987L11.44 4.60987C10.4083 3.57818 9.00903 2.99858 7.55 2.99858C6.09096 2.99858 4.69169 3.57818 3.66 4.60987C2.6283 5.64156 2.04871 7.04084 2.04871 8.49987C2.04871 9.95891 2.6283 11.3582 3.66 12.3899L4.72 13.4499L12.5 21.2299L20.28 13.4499L21.34 12.3899C21.851 11.8791 22.2563 11.2727 22.5329 10.6052C22.8095 9.93777 22.9518 9.22236 22.9518 8.49987C22.9518 7.77738 22.8095 7.06198 22.5329 6.39452C22.2563 5.72706 21.851 5.12063 21.34 4.60987V4.60987Z"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M20.5 21V19C20.5 17.9391 20.0786 16.9217 19.3284 16.1716C18.5783 15.4214 17.5609 15 16.5 15H8.5C7.43913 15 6.42172 15.4214 5.67157 16.1716C4.92143 16.9217 4.5 17.9391 4.5 19V21"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M12.5 11C14.7091 11 16.5 9.20914 16.5 7C16.5 4.79086 14.7091 3 12.5 3C10.2909 3 8.5 4.79086 8.5 7C8.5 9.20914 10.2909 11 12.5 11Z"
+                stroke="#A2A0B3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -96,6 +96,11 @@ button {
   height: 120px;
 }
 
+.wr-login-wrp {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* The checkbox container */
 .wu-checkbox-container {
   display: block;

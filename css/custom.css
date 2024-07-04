@@ -71,8 +71,29 @@ button {
 .nav-item .active span {
   color: #4dace1 !important;
 }
+
 .nav-item .active svg path {
   stroke: #4dace1;
+}
+
+.nav-link:hover, .nav-link:focus, a:hover {
+  color: #4dace1;
+}
+
+.user-profile-header-banner img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.light-style .user-profile-header .user-profile-img {
+  border-color: #fff;
+}
+
+.user-profile-header .user-profile-img {
+  border: 5px solid white;
+  width: 120px;
+  height: 120px;
 }
 
 /* The checkbox container */

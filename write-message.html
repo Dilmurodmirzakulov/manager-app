@@ -469,32 +469,118 @@
     <footer class="position-fixed bottom-0 w-100 bg-white py-3 zindex-2">
       <div class="container d-flex justify-content-center">
         <div class="chat-history-footer w-100">
-          <form class="form-send-message d-flex justify-content-between align-items-center ">
-            <input class="form-control message-input me-3 shadow-none" placeholder="Type your message here...">
-            <div class="message-actions d-flex align-items-center">
-              <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 23H16" stroke="#697a8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 19V23" stroke="#697a8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 1C11.2044 1 10.4413 1.31607 9.87868 1.87868C9.31607 2.44129 9 3.20435 9 4V12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12V4C15 3.20435 14.6839 2.44129 14.1213 1.87868C13.5587 1.31607 12.7956 1 12 1V1Z" stroke="#697a8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M19 10V12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19C10.1435 19 8.36301 18.2625 7.05025 16.9497C5.7375 15.637 5 13.8565 5 12V10" stroke="#697a8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <form
+            class="form-send-message d-flex justify-content-between align-items-end"
+          >
+            <label
+              for="attach-doc"
+              class="form-label border-0 me-2 mb-0 btn px-2"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.44 11.05L12.25 20.24C11.1242 21.3659 9.59723 21.9984 8.00505 21.9984C6.41286 21.9984 4.88589 21.3659 3.76005 20.24C2.6342 19.1142 2.00171 17.5872 2.00171 15.995C2.00171 14.4029 2.6342 12.8759 3.76005 11.75L12.95 2.56004C13.7006 1.80948 14.7186 1.38782 15.78 1.38782C16.8415 1.38782 17.8595 1.80948 18.61 2.56004C19.3606 3.3106 19.7823 4.32859 19.7823 5.39004C19.7823 6.4515 19.3606 7.46948 18.61 8.22004L9.41005 17.41C9.03476 17.7853 8.52577 17.9962 7.99505 17.9962C7.46432 17.9962 6.95533 17.7853 6.58005 17.41C6.20476 17.0348 5.99393 16.5258 5.99393 15.995C5.99393 15.4643 6.20476 14.9553 6.58005 14.58L15.07 6.10004"
+                  stroke="#697a8d"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
-              <label for="attach-doc" class="form-label mb-0">
-                <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.44 11.05L12.25 20.24C11.1242 21.3659 9.59723 21.9984 8.00505 21.9984C6.41286 21.9984 4.88589 21.3659 3.76005 20.24C2.6342 19.1142 2.00171 17.5872 2.00171 15.995C2.00171 14.4029 2.6342 12.8759 3.76005 11.75L12.95 2.56004C13.7006 1.80948 14.7186 1.38782 15.78 1.38782C16.8415 1.38782 17.8595 1.80948 18.61 2.56004C19.3606 3.3106 19.7823 4.32859 19.7823 5.39004C19.7823 6.4515 19.3606 7.46948 18.61 8.22004L9.41005 17.41C9.03476 17.7853 8.52577 17.9962 7.99505 17.9962C7.46432 17.9962 6.95533 17.7853 6.58005 17.41C6.20476 17.0348 5.99393 16.5258 5.99393 15.995C5.99393 15.4643 6.20476 14.9553 6.58005 14.58L15.07 6.10004" stroke="#697a8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <input type="file" id="attach-doc" hidden="" />
+            </label>
+            <textarea
+              id="auto-resize"
+              class="form-control border-0 shadow-none"
+              rows="1"
+              placeholder="Write message..."
+            ></textarea>
+            <div class="message-actions d-flex align-items-center">
+              <button class="btn btn-icon mx-3 border-0">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 23H16"
+                    stroke="#697a8d"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 19V23"
+                    stroke="#697a8d"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1C11.2044 1 10.4413 1.31607 9.87868 1.87868C9.31607 2.44129 9 3.20435 9 4V12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12V4C15 3.20435 14.6839 2.44129 14.1213 1.87868C13.5587 1.31607 12.7956 1 12 1V1Z"
+                    stroke="#697a8d"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19 10V12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19C10.1435 19 8.36301 18.2625 7.05025 16.9497C5.7375 15.637 5 13.8565 5 12V10"
+                    stroke="#697a8d"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
-                <input type="file" id="attach-doc" hidden="">
-              </label>
-              <button class="btn btn-primary d-flex align-items-center send-msg-btn">
-                <svg class="me-1" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </button>
+
+              <button class="btn btn-primary btn-icon">
+                <svg
+                  class="me-1"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 2L11 13"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 2L15 22L11 13L2 9L22 2Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
-                <span class="align-middle d-md-inline-block d-none">Send</span>
               </button>
             </div>
           </form>
         </div>
       </div>
     </footer>
+
+    <script>
+      const textarea = document.getElementById("auto-resize");
+
+      textarea.addEventListener("input", function () {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+      });
+
+      // Initialize the textarea height based on its content
+      textarea.style.height = "auto";
+      textarea.style.height = textarea.scrollHeight + "px";
+    </script>
   </body>
 </html>

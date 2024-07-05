@@ -41,31 +41,6 @@
         </div>
       </div>
     </header>
-    <nav class="layout-navbar shadow-none h-100 d-none d-md-block">
-      <div class="container">
-        <div class="navbar navbar-expand-lg landing-navbar">
-          <div class="collapse navbar-collapse landing-nav-menu">
-            <ul class="navbar-nav d-flex justify-content-between w-100">
-              <li class="nav-item">
-                <a class="nav-link fw-medium" aria-current="page" href="index.html">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-medium" href="task-detail.html">Task</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-medium" href="profile.html">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-medium" href="#">Message</a>
-              </li>
-            </ul>
-          </div>
-          <div class="landing-menu-overlay d-lg-none"></div>
-        </div>
-      </div>
-    </nav>
     <main class="pb-5">
       <div class="container py-3">
         <div class="text-center">
@@ -74,68 +49,72 @@
           <p class="mb-0">Ending date: <span>25 jan 2022</span></p>
         </div>
       </div>
-      <ul
-        class="nav nav-tabs wu-tab-nav justify-content-around"
-        id="myTab"
-        role="tablist"
-      >
-        <li class="nav-item" role="presentation">
-          <button
-            class="bg-transparent wu-tab-btn border-0 active"
-            id="all-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#all-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="all-tab-pane"
-            aria-selected="true"
+      <div class="wu-tab-nav">
+        <div class="container">
+          <ul
+            class="nav nav-tabs wu-tab-nav justify-content-between"
+            id="myTab"
+            role="tablist"
           >
-            All task
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="bg-transparent wu-tab-btn border-0"
-            id="file-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#file-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="file-tab-pane"
-            aria-selected="true"
-          >
-            File
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="bg-transparent wu-tab-btn border-0"
-            id="team-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#team-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="team-tab-pane"
-            aria-selected="true"
-          >
-            Team
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="bg-transparent wu-tab-btn border-0"
-            id="comment-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#comment-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="comment-tab-pane"
-            aria-selected="false"
-          >
-            Comment
-          </button>
-        </li>
-      </ul>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bg-transparent wu-tab-btn border-0 active"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="all-tab-pane"
+                aria-selected="true"
+              >
+                All task
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bg-transparent wu-tab-btn border-0"
+                id="file-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#file-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="file-tab-pane"
+                aria-selected="true"
+              >
+                File
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bg-transparent wu-tab-btn border-0"
+                id="team-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#team-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="team-tab-pane"
+                aria-selected="true"
+              >
+                Team
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bg-transparent wu-tab-btn border-0"
+                id="comment-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#comment-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="comment-tab-pane"
+                aria-selected="false"
+              >
+                Comment
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="container">
         <div class="tab-content p-0" id="myTabContent">
           <div

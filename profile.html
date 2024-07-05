@@ -77,186 +77,196 @@
             </div>
           </div>
         </div>
-        <!-- <div class="d-flex align-items-center mb-4">
-          <div class="wu-user-avatar">
-            <img
-              class="img-fluid"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
-              alt=""
-            />
+        <div class="d-flex mb-4">
+          <button class="btn btn-primary me-4">
+            <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+            </svg>
+            <span class="ms-2">Team</span>
+          </button>
+          <button class="btn btn-danger">
+            <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 17L21 12L16 7"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 12H9"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ms-2">Log out</span>
+          </button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="nav-align-top mb-3">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#form-tabs-personal" role="tab" aria-selected="true">Personal Info</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link " data-bs-toggle="tab" data-bs-target="#form-tabs-account" role="tab" aria-selected="false" tabindex="-1">Account Detail</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#form-tabs-social" role="tab" aria-selected="false" tabindex="-1">Social Links</button>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade active show" id="form-tabs-personal" role="tabpanel">
+                  <form>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-last-name">Last Name</label>
+                        <input type="text" id="formtabs-last-name" class="form-control" placeholder="Doe">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-birthdate">Birth Date</label>
+                        <input type="text" id="formtabs-birthdate" class="form-control dob-picker flatpickr-input" placeholder="YYYY-MM-DD" readonly="readonly">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-phone">Phone No</label>
+                        <input type="text" id="formtabs-phone" class="form-control phone-mask" placeholder="658 799 8941" aria-label="658 799 8941">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-job">Job</label>
+                        <input type="text" id="formtabs-job" class="form-control" placeholder="" aria-label="">
+                      </div>
+                    </div>
+                    <div class="pt-4">
+                      <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                      <button type="reset" class="btn btn-label-secondary">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="form-tabs-account" role="tabpanel">
+                  <form>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-username">Username</label>
+                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-email">Email</label>
+                        <div class="input-group input-group-merge">
+                          <input type="text" id="formtabs-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="formtabs-email2">
+                          <span class="input-group-text" id="formtabs-email2">@example.com</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-password-toggle">
+                          <label class="form-label" for="formtabs-password">Password</label>
+                          <div class="input-group input-group-merge">
+                            <input type="password" id="formtabs-password" class="form-control" placeholder="············" aria-describedby="formtabs-password2">
+                            <span class="input-group-text cursor-pointer" id="formtabs-password2"><i class="bx bx-hide"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-password-toggle">
+                          <label class="form-label" for="formtabs-confirm-password">Confirm Password</label>
+                          <div class="input-group input-group-merge">
+                            <input type="password" id="formtabs-confirm-password" class="form-control" placeholder="············" aria-describedby="formtabs-confirm-password2">
+                            <span class="input-group-text cursor-pointer" id="formtabs-confirm-password2"><i class="bx bx-hide"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pt-4">
+                      <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                      <button type="reset" class="btn btn-label-secondary">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="form-tabs-social" role="tabpanel">
+                  <form>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-twitter">Twitter</label>
+                        <input type="text" id="formtabs-twitter" class="form-control" placeholder="https://twitter.com/abc">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-facebook">Facebook</label>
+                        <input type="text" id="formtabs-facebook" class="form-control" placeholder="https://facebook.com/abc">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-google">Google+</label>
+                        <input type="text" id="formtabs-google" class="form-control" placeholder="https://plus.google.com/abc">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-linkedin">Linkedin</label>
+                        <input type="text" id="formtabs-linkedin" class="form-control" placeholder="https://linkedin.com/abc">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-instagram">Instagram</label>
+                        <input type="text" id="formtabs-instagram" class="form-control" placeholder="https://instagram.com/abc">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="formtabs-quora">Quora</label>
+                        <input type="text" id="formtabs-quora" class="form-control" placeholder="https://quora.com/abc">
+                      </div>
+                    </div>
+                    <div class="pt-4">
+                      <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                      <button type="reset" class="btn btn-label-secondary">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5 class="mb-0">John Doe</h5>
-            <p class="mb-0">20 task / 10 completed</p>
-            <p class="mb-0">Developer</p>
-          </div>
-        </div> -->
-        <div class="card">
-          <ul class="nav">
-            <li class="nav-item border-bottom w-100">
-              <a
-                href="#"
-                class="nav-link d-flex justify-content-between w-100 px-3"
-              >
-                <div class="d-flex align-items-center">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                      stroke="#979797"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                      stroke="#979797"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span class="ms-2">Edit Profile</span>
-                </div>
-                <svg
-                  width="22"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 18L15 12L9 6"
-                    stroke="#979797"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item border-bottom w-100">
-              <a
-                href="#"
-                class="nav-link d-flex justify-content-between w-100 px-3"
-              >
-                <div class="d-flex align-items-center">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
-                      stroke="#979797"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
-                      stroke="#979797"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
-                      stroke="#979797"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
-                      stroke="#979797"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-
-                  <span class="ms-2">Team</span>
-                </div>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 18L15 12L9 6"
-                    stroke="#979797"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item border-bottom w-100">
-              <a
-                href="#"
-                class="nav-link d-flex justify-content-between w-100 px-3"
-              >
-                <div class="d-flex align-items-center">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 17L21 12L16 7"
-                      stroke="#F02E2E"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21 12H9"
-                      stroke="#F02E2E"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
-                      stroke="#F02E2E"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span class="ms-2">Log out</span>
-                </div>
-                <svg
-                  width="22"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 18L15 12L9 6"
-                    stroke="#979797"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </main>
